@@ -35,7 +35,7 @@
 1. Клонируйте репозиторий проекта:
 
 ```sh
-git clone <URL репозитория>
+git clone https://github.com/radiant2958/LogisticsApi.git
 ```
 
 2. Перейдите в папку проекта:
