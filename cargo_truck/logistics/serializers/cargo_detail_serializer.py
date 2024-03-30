@@ -1,6 +1,5 @@
 from rest_framework import serializers
 from logistics.models import Cargo, Vehicle
-from geopy.distance import geodesic
 from logistics.services import calculate_distance
 
 class DetailedCargoSerializer(serializers.ModelSerializer):
@@ -9,6 +8,14 @@ class DetailedCargoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cargo
         fields = ('pick_up_location', 'delivery_location', 'weight', 'description', 'all_vehicles_with_distance')
+    
+    
+    def get_pick_up_location_zip(self, obj):
+        return obj.pick_up_location.zip
+
+    def get_delivery_location_zip(self, obj):
+        return obj.delivery_location.zip
+   
    
     def get_all_vehicles_with_distance(self, obj):
         vehicles = Vehicle.objects.all()

@@ -22,7 +22,3 @@ class Vehicle(models.Model):
     current_location = models.ForeignKey(Location, on_delete=models.CASCADE)
     carrying_capacity = models.IntegerField()
 
-#Модель для отслеживания инициализации
-class Initialization(models.Model):
-    data_loaded = models.BooleanField(default=False)
-    vehicles_created = models.BooleanField(default=False)

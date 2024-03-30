@@ -1,7 +1,7 @@
 from rest_framework import generics
 from logistics.models import Cargo
-from logistics.serializers.cargo_serializer import CargoSerializer
+from logistics.serializers.cargos_create_serializer import CargoCreateSerializer
 
 class CargoCreateView(generics.CreateAPIView):
     queryset = Cargo.objects.all()
-    serializer_class = CargoSerializer
+    serializer_class = CargoCreateSerializer
