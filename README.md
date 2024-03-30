@@ -7,7 +7,9 @@
 Он предназначен для облегчения поиска ближайших доступных машин для транспортировки грузов, а также для управления информацией о грузах и машинах.
 
 
-## Стек: Python3.11, Django REST Framework, PostgreSQL, Docker, Docker Compose, geopy, Celery.
+## Стек
+
+  Python3.11, Django REST Framework, PostgreSQL, Docker, Docker Compose, geopy, Celery.
 
 
 ## Функционал
